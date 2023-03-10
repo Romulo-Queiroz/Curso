@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace CursoEFCore
 {
@@ -6,7 +7,10 @@ namespace CursoEFCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var db = new ApplicationContext())
+            {
+                db.Database.Migrate();
+            }
         }
     }
 }

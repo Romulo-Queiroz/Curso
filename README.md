@@ -10,6 +10,7 @@ Para rodar o projeto você precisa antes de algumas ferramentas instaladas:
 * Microsoft.EntityFrameworkCore 3.1.5
 * Microsoft.EntityFrameworkCore.SqlServer 2.1.14
 * Microsoft.EntityFrameworkCore.Tools 3.1.5
+* Microsoft.EntityFrameworkCore.Design 3.1.5
 
 
 
