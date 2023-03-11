@@ -9,7 +9,7 @@ namespace CursoEFCore
         {
             using (var db = new ApplicationContext())
             {
-                db.Database.Migrate();
+                //db.Database.Migrate();
             }
         }
     }
