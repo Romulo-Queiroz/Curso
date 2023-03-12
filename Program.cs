@@ -10,10 +10,39 @@ namespace CursoEFCore
         static void Main(string[] args)
         {
          //InserirDadosEmMassa();
+         //InserirDados();
+         InserirCliente();
          //ConsultarDados();
-         AtualizarDados();
+         //AtualizarDados();
+          //ExcluirDados();
         }
 
+        public static void ExcluirDados()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var cliente = db.Clientes.Find(1);
+                db.Remove(cliente);
+                db.SaveChanges();
+            }
+        }
+        private static void InserirCliente()
+        {
+            var cliente = new Cliente
+            {
+                Nome = "Rômulo",
+                CEP = "12345678",
+                Cidade = "Rio de Janeiro",
+                Estado = "RJ",
+                Telefone = "123456789"
+            };
+
+            using (var db = new ApplicationContext())
+            {
+                db.Clientes.Add(cliente);
+                db.SaveChanges();
+            }
+        }
         private static void AtualizarDados()
         {
             using (var db = new ApplicationContext())
@@ -66,17 +95,17 @@ namespace CursoEFCore
         {
             var produto = new Produto                   //Adicionando um novo produto
             {
-            Descricao = "Produto Outro",
+            Descricao = "Produto One",
             CodigoBarras = "123456789",
             Valor = 10m
             };
 
             var cliente = new Cliente
             {
-                Nome = "Fulano de Tal",
+                Nome = "Rômulo33",
                 CEP = "12345678",
-                Cidade = "São Paulo",
-                Estado = "SP",
+                Cidade = "Rio de Janeiro",
+                Estado = "RJ",
                 Telefone = "123456789"
             };
 
