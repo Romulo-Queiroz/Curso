@@ -5,7 +5,8 @@
 
 # Iniciando o projeto
 Para rodar o projeto você precisa antes de algumas ferramentas instaladas:
-* Visual Studio Code (Preferência)
+* Visual Studio Code (cross plataform)
+* Visual Studio Code (only windows)
 #### Alguns pacotes do NuGet como:
 * Microsoft.EntityFrameworkCore 3.1.5
 * Microsoft.EntityFrameworkCore.SqlServer 2.1.14
@@ -19,6 +20,3 @@ Para rodar o projeto você precisa antes de algumas ferramentas instaladas:
 ### Languages
 
 - **C#**
-- **(Readme em criação)**
-- **(Readme em criação)**
-- **(Readme em criação)**
