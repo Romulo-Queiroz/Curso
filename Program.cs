@@ -10,7 +10,19 @@ namespace CursoEFCore
         static void Main(string[] args)
         {
          //InserirDadosEmMassa();
-         ConsultarDados();
+         //ConsultarDados();
+         AtualizarDados();
+        }
+
+        private static void AtualizarDados()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var cliente = db.Clientes.Find(1);
+                cliente.Nome = "Rômulo 33";
+                //db.Clientes.Update(cliente); n precisa do update neste caso.
+                db.SaveChanges();
+            }
         }
 
           private static void ConsultarDados()
