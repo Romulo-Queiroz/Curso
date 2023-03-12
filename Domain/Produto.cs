@@ -9,6 +9,6 @@ public class Produto
     public string Descricao { get; set; }
     public decimal Valor { get; set; }
     public decimal ValorPromocao { get; set; }
-    public TipoProduto TipoProduto { get; set; }
+    public  TipoProduto TipoProduto { get; set; }
     public string Observacao { get; set; }   
 }
